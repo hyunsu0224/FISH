@@ -1,0 +1,104 @@
+body
+{
+  background: #262626;
+  position: static
+  width : 1000px;
+  height: 1000px
+}
+
+#clock
+  {
+    color: wheat;
+    position: fixed;
+    right: 0px;
+    float: right;
+    width: 190px;
+    height: 40px;
+    margin-right: 5px;
+    border: 4px solid wheat;
+  }
+
+#mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	background-color: #000000;
+	display: none;
+}
+
+.layerpop {
+	display: none;
+	z-index: 1000;
+	border: 2px solid #ccc;
+	background: #fff;
+	cursor: move;
+}
+
+
+.layerpop_store {
+	display: none;
+	z-index: 1000;
+	border: 2px solid #ccc;
+	background: #fff;
+	cursor: move;
+}
+
+.layerpop_area .title {
+	padding: 10px 10px 10px 10px;
+	border: 0px solid #aaaaaa;
+	background: #f1f1f1;
+	color: #3eb0ce;
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.layerpop_area .title_store {
+	padding: 10px 10px 10px 10px;
+	border: 0px solid #aaaaaa;
+	background: #f1f1f1;
+	color: #3eb0ce;
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.layerpop_area .layerpop_close {
+	width: 25px;
+	height: 25px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: transparent url('btn_exit_off.png') no-repeat;
+}
+
+.layerpop_area .layerpop_close:hover {
+	background: transparent url('btn_exit_on.png') no-repeat;
+	cursor: pointer;
+}
+
+.layerpop_area .content {
+	width: 96%;
+	margin: 2%;
+	color: #828282;
+}
+
+div.startpageimage {
+  position: relative;
+  top : 100px;
+  left : 500px;
+}
+
+button.setting {
+  position: relative;
+  top : 200px;
+  left : 200px;
+  width:200px;
+  height: 100px;
+}
+p.gamestart {
+  position: relative;
+  font-size: 20px;
+}

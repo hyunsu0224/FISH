@@ -1,0 +1,40 @@
+body
+{
+  position: static;
+  background: #dd7d99;
+  width : 200px;
+  height : 400px;
+}
+
+table
+{
+  position: absolute;
+  width : 40%;
+  height : 80%;
+  top : 10%;
+  left : 30%;
+  border : 1px solid : #444444;
+  border-collapse: collapse;
+}
+
+th, td
+{
+  border: 1px solid #444444;
+}
+
+.qwe {
+  position : absolute;
+  left : 45%;
+}
+
+input.Join {
+  position: absolute;
+  top : 95%;
+  left : 40%;
+}
+
+input.BackToStartPage {
+  position: absolute;
+  top : 95%;
+  left : 60%;
+}
