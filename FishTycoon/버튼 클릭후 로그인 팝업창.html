@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>팝업창 연습</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type ="text/javascript">
+    $(document).ready(function() {
+      $('#pop_bt').click(function(){
+        $('#pop').show();
+      });
+      $('#close').click(function(){
+        $('#pop').hide();
+      });
+    });
+  </script>
+  <style type="text/css">
+  #pop{
+    width:300px;
+    height:400px;
+    background:#3d3d3d;
+    color:#fff;
+    position:absolute;
+    top:10px;
+    left:100px;
+    text-align:center;
+    border:2px solid #000;
+  }
+  #pop_bt{
+    border: 1px solid #000;
+    width: 100px; margin: auto;
+    margin-top: 300px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+  }
+  #close{
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div id="pop_bt">
+    FishTycoon
+  </div>
+
+  <div id ="pop" style="display:none;">
+    <div style="float: right;">
+    ID :
+    <input type="text" name="username" size="10" /><br>
+
+    PW :
+    <input type="password" name="userpass" size="10" /> &nbsp;
+
+    <button type="button"  value="LOGIN"onclick="" >LOGIN</button> <br>
+    <button type="button"  value="JOIN" onclick=""> JOIN</button>
+    <button type="button"  value="ID/PW 찾기"> ID/PW 찾기</button>
+   </div>
+
+    <div>
+      <div id="close" style="width:100px; margin:auto;">close</div>
+    </div>
+  </div>
+</body>
+</html>

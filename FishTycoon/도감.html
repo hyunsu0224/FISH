@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>팝업창 연습</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type ="text/javascript">
+    $(document).ready(function() {
+      $('#pop_bt').click(function(){
+        $('#pop').show();
+      });
+      $('#close').click(function(){
+        $('#pop').hide();
+      });
+    });
+  </script>
+  <style type="text/css">
+
+	#header{
+		height:100px;
+		line-height:100px;
+		font-size:30px;
+		border-bottom:3px solid #000;
+		text-align:center;
+	}
+	#footer{
+		border-top:1px solid #666;
+		height:70px;
+		line-height:70px;
+		text-align:center;
+	}
+	#content{
+		width:800px;
+		height:280px;
+		margin:0 auto;
+		border-left:1px solid #bebebe;
+		border-right:1px solid #bebebe;
+		background:black;
+	}
+  #pop{
+    width:300px;
+    height:400px;
+    background:#3d3d3d;
+    color:#fff;
+    position:absolute;
+    top:10px;
+    left:100px;
+    text-align:center;
+    border:2px solid #000;
+  }
+  #pop_bt{
+    border: 1px solid #000;
+    width: 100px; margin: auto;
+    margin-top: 300px;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+  }
+  #close{
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .head_name{
+    text-align:left;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div id="pop_bt">
+    포켓몬 도감
+  </div>
+
+  <div id ="pop" style="display:none;">
+
+    <header id="content">
+      <img src="pica.png" width="150">
+      No.25 피카츄 <br>
+      <div class="head_name">
+      이름 : 피카츄(한) ピカチュウ(일) Pikachu(영) <br>
+      타입 : 전기 <br>
+      </div>
+      <br>
+      <br>
+      <div class="head_name">
+      게임 및 애니메이션 포켓몬스터 시리즈에 등장하는 포켓몬으로 포켓몬스터의 상징 그 자체이자<br>
+       둘도없는 영원한 마스코트 다. 담당 성우는 오오타니 이쿠에다. 보는 바와 같이 귀엽다. <br>
+      그 때문인지 포켓몬 게임의 가장 초기판인 적/녹/청 시절에 게이머들에게 낮은 종족값에도 불구하고 가장 <br>
+      사랑을 받아서 게임이 인기를 끌자 제작된 애니메이션에서는 아예 주인공 포켓몬으로 낙점되었다. <br>
+      이 이유는 파이리, 꼬부기, 이상해씨 중 하나로 선택하면 게임에서 자기가 선택하지 않은 포켓몬이<br>
+       주인공이 되어서 불만이 있을 수 있다는 생각을 하였고 아예 다른 포켓몬을 파트너로 택하자고 결정을 내렸고 <br>
+       인기투표를 통해 당첨된 포켓몬이 피카츄였다.<br>
+      약 800마리 이상에 달하는 포켓몬스터의 캐릭터 중 가장 성공한 캐릭터이며 이런 류의 몬스터 캐릭터 중 <br>
+      세계적으로 유례가 없을 정도로 대성공을 거두었다. <br>
+      그 인기로 피카츄가 스타팅 포켓몬인 포켓몬스터 피카츄까지 발매되는 기염을 토했다.
+      </div>
+      <br><br>
+      <div>
+        <input type="image" src="pica.png" id="close"></input>
+      </div>
+    </header>
+    <section id="content">
+
+    </section>
+  </div>
+</body>
+</html>
