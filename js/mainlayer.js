@@ -79,20 +79,6 @@ function popupOpen() {
   $('#layerbox').show();
 }
 
-function giveFood(){
-  $('.food').css("position", "absolute");
-  // 영역 가운에데 레이어를 뛰우기 위해 위치 계산
-  $('.food').css("top",(($(window).height() - $('.layerpop').outerHeight()) / 2) + $(window).scrollTop());
-  $('.food').css("left",(($(window).width() - $('.layerpop').outerWidth()) / 2) + $(window).scrollLeft());
-  $('.food').draggable();
-
-  $('#food').show();
-}
-
-function goFood(){
-  giveFood();
-}
-
 function popupClose() {
   $('#layerbox').hide();
   $('#mask').hide();
@@ -131,38 +117,12 @@ function goDetailStore() {
   wrapWindowByMask(); // 화면 마스크 효과
 }
 
-function changeFishBowl1() {
-
-  // 어항1로 CSS 변경하는 함수
-
-  let bowl = $('.bowl');
-  let water = $('.water');
-
-  bowl.css('border-radius', '33%');
-  water.css('border-bottom-right-radius', '150px')
-  water.css('border-bottom-left-radius',  '150px')
-
-}
-
-function changeFishBowl2() {
-
-    // 어항2로 CSS 변경하는 함수
-
-  let bowl = $('.bowl');
-  let water = $('.water');
-
-  bowl.css('border-radius', '55%');
-  water.css('border-bottom-right-radius', '250px')
-  water.css('border-bottom-left-radius',  '250px')
-
-
-}
-
 function makeImg(){
        img=document.createElement("img");
         img.src="img/food.png"
          img.width="20"; img.height="20";
-
 }
+
+
 
 init();

@@ -1,22 +1,8 @@
 body
 {
   background: #262626;
-  position: static
-  width : 1000px;
-  height: 1000px
+  position: absolute;
 }
-
-#clock
-  {
-    color: wheat;
-    position: fixed;
-    right: 0px;
-    float: right;
-    width: 190px;
-    height: 40px;
-    margin-right: 5px;
-    border: 4px solid wheat;
-  }
 
 #mask {
 	position: absolute;
@@ -32,17 +18,10 @@ body
 	z-index: 1000;
 	border: 2px solid #ccc;
 	background: #fff;
-	cursor: move;
 }
 
 
-.layerpop_store {
-	display: none;
-	z-index: 1000;
-	border: 2px solid #ccc;
-	background: #fff;
-	cursor: move;
-}
+
 
 .layerpop_area .title {
 	padding: 10px 10px 10px 10px;
@@ -53,8 +32,26 @@ body
 	font-weight: bold;
 	line-height: 24px;
 }
-
-.layerpop_area .title_store {
+.layerpop_area .layerpop_close {
+  position: absolute;
+	width: 25px;
+	height: 25px;
+	display: block;
+	top: 0%;
+	left: 95%;
+	background: transparent url('btn_exit_off.png') no-repeat;
+}
+.layerpop_area .layerpop_close:hover {
+	background: transparent url('btn_exit_on.png') no-repeat;
+	cursor: pointer;
+}
+.layerpop_store {
+	display: none;
+	z-index: 1000;
+	border: 2px solid #ccc;
+	background: #fff;
+}
+.layerpop_store_area .title_store {
 	padding: 10px 10px 10px 10px;
 	border: 0px solid #aaaaaa;
 	background: #f1f1f1;
@@ -63,18 +60,16 @@ body
 	font-weight: bold;
 	line-height: 24px;
 }
-
-.layerpop_area .layerpop_close {
+.layerpop_store_area .layerpop_store_close {
+  position: absolute;
 	width: 25px;
 	height: 25px;
 	display: block;
-	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 0%;
+	left: 95%;
 	background: transparent url('btn_exit_off.png') no-repeat;
 }
-
-.layerpop_area .layerpop_close:hover {
+.layerpop_store_area .layerpop_store_close:hover {
 	background: transparent url('btn_exit_on.png') no-repeat;
 	cursor: pointer;
 }
@@ -86,19 +81,26 @@ body
 }
 
 div.startpageimage {
-  position: relative;
+  position: absolute;
   top : 100px;
   left : 500px;
 }
 
-button.setting {
-  position: relative;
-  top : 200px;
-  left : 200px;
-  width:200px;
+button.setting1 {
+  position: absolute;
+  top : 500px;
+  left : 500px;
+  width: 200px;
+  height: 100px;
+}
+button.setting2 {
+  position: absolute;
+  top : 500px;
+  left : 700px;
+  width: 200px;
   height: 100px;
 }
 p.gamestart {
-  position: relative;
+  position: absolute;
   font-size: 20px;
 }

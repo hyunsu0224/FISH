@@ -18,30 +18,34 @@
     <div class="startpageimage">
       <img src="img/startpage.gif">
     </div>
-    <button class="setting" onclick="goDetail()">
+
+    <button class="setting1" onclick="goDetail()">
         <p class="gamestart">접속하기</p>
           <div id="layerbox" class="layerpop" style="width: 700px; height: 350px;">
               <article class="layerpop_area">
+              <br><br>
                 로그인 화면입니다.<br>
-                  ID <input type="text" name="UserId" required="required"/><br>
-                  PassWord <input type="password" name="UserPassword" required="required"/><br>
+                ID <input type="text" name="UserId" required="required"/><br>
+                PassWord <input type="password" name="UserPassword" required="required"/><br>
                 <input type="button" name="Login" value="로그인" onclick="location.href='fishroom.html'"/>
                 <input type="button" name="ForgetId" value="아이디/비번 찾기"/>
                 <input type="button" name="JoinMemberBt" value="회원가입" onClick="location.href='JoinMember.html'" />
                 <a href="javascript:popupClose();" class="layerpop_close"id="layerbox_close">
                 </a>
+                </article>
           </div>
     </button>
 
-    <button class="setting" onclick="goDetail()">
+    <button class="setting2" onclick="goDetailStore()">
       <p class="gamestart">개발자설명</p>
-        <div id="layerbox" class="layerpop" style="width: 700px; height: 350px;">
-            <article class="layerpop_area">
+        <div id="layerbox_store" class="layerpop_store" style="width: 700px; height: 350px;">
+            <article class="layerpop_store_area">
+              <br><br>
               개발자설명<br>
-              <a href="javascript:popupClose();" class="layerpop_close"id="layerbox_close">
+              <a href="javascript:popupCloseStore();" class="layerpop_store_close"id="layerbox_close">
               </a>
+            </article>
         </div>
-
     </button>
 
       <script type = "text/javascript" src = "js/loginlayer.js"></script>
